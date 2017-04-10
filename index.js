@@ -1,7 +1,7 @@
 const fs = require('fs');
 const AnkiExport = require('anki-apkg-export').default;
 
-const apkg = new AnkiExport('spacemacs-binding');
+const apkg = new AnkiExport('spacemacs-bindings');
 
 //apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
 
@@ -14,15 +14,13 @@ categories.forEach((cat) => {
         .map((line) => {
             const sides = line.split(' - ');
             if (sides.length === 2) {
-                let keys = `<kbd>${sides[0]}</kbd>`
+                let keys = `<kbd>${sides[0]}</kbd>`.replace('SPC', '<i>SPC</i>')
                 apkg.addCard(keys, sides[1], {tags: [cat, 'binding to def']})
                 apkg.addCard(sides[1], keys, {tags: [cat, 'def to binding']})
+                // maybe: option single sided
             }
         })
 })
-
-// maybe: option single sided
-
 
 apkg
     .save()

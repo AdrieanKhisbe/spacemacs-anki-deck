@@ -5,14 +5,14 @@ const apkg = new AnkiExport('spacemacs-bindings');
 
 //apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
 
-let categories = ['search'];
+let categories = ['search', 'layers'];
 
 categories.forEach((cat) => {
     const catContent = fs.readFileSync(`./bindings/${cat}`)
     catContent.toString()
         .split('\n')
         .map((line) => {
-            const sides = line.split(' - ');
+            const sides = line.split(' -- ');
             if (sides.length === 2) {
                 let keys = `<kbd>${sides[0]}</kbd>`.replace('SPC', '<i>SPC</i>')
                 apkg.addCard(keys, sides[1], {tags: [cat, 'binding to def']})

@@ -1,3 +1,3 @@
-SPC s b - Search buffer
-SPC s f - Search files in a given directory
-SPC s p - Search in current project
+SPC s b -- Search buffer
+SPC s f -- Search files in a given directory
+SPC s p -- Search in current project

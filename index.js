@@ -1,11 +1,11 @@
 const fs = require('fs');
 const AnkiExport = require('anki-apkg-export').default;
 
-const apkg = new AnkiExport('spacemacs-bindings');
+const apkg = new AnkiExport('spacemacs-bindings::subdeckattempt2');
 
 //apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
 
-let categories = ['search', 'layers', 'buffers'];
+let categories = ['search', 'layers', 'buffers', 'files'];
 
 categories.forEach((cat) => {
     const catContent = fs.readFileSync(`./bindings/${cat}`)

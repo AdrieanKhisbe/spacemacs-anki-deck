@@ -1,0 +1,23 @@
+SPC f b -- Helm filtered bookmarks
+SPC f c -- Copy file
+SPC f D -- Delete current bufer and file
+SPC f E -- Sudo edit
+SPC f f/F -- Helm find file
+SPC f g -- Rgrep
+SPC f h -- Hexl find file
+SPC f J -- Open junk file
+SPC f j -- Dired jump
+SPC f L -- Helm locate
+SPC f l -- Find file Literally
+SPC f o -- Open file in external program
+SPC f R -- Rename Current Buffer file
+SPC f r -- Helm recentf
+SPC f s -- Save Buffer
+SPC f S -- Save all buffers
+SPC f T -- Neotree Show
+SPC f t -- Toggle Neotree
+SPC f y -- Show and copy buffer filename
+SPC f e d -- Find dotfile
+SPC f e i -- Fond user init file
+SPC f e R -- Sync Spacemacs configuration
+SPC f e l -- Helm locate library

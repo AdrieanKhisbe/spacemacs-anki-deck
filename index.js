@@ -1,14 +1,13 @@
 const fs = require('fs');
 const AnkiExport = require('anki-apkg-export').default;
 
-const apkg = new AnkiExport('spacemacs-bindings::subdeckattempt2');
-
 //apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
 
 let categories = ['search', 'layers', 'buffers', 'files', 'jump'];
 
 categories.forEach((cat) => {
-    const catContent = fs.readFileSync(`./bindings/${cat}`)
+    const apkg = new AnkiExport('spacemacs-bindings::' + cat);
+    const catContent = fs.readFileSync(`./bindings/${cat}`);
     catContent.toString()
         .split('\n')
         .map((line) => {
@@ -20,12 +19,12 @@ categories.forEach((cat) => {
                 // maybe: option single sided
             }
         })
-})
+    apkg
+        .save()
+        .then(zip => {
+            fs.writeFileSync(`./spacemacs-${cat}.apkg`, zip, 'binary');
+            console.log(`Package has been generated: spacemacs-${cat}.apkg`);
+        })
+        .catch(err => console.log(err.stack || err));
 
-apkg
-    .save()
-    .then(zip => {
-        fs.writeFileSync('./output.apkg', zip, 'binary');
-        console.log(`Package has been generated: output.pkg`);
-    })
-    .catch(err => console.log(err.stack || err));
+})

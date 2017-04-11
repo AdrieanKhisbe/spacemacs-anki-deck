@@ -15,8 +15,10 @@ categories.forEach((cat) => {
             if (sides.length === 2) {
                 let keys = `<kbd>${sides[0]}</kbd>`.replace('SPC', '<i>SPC</i>')
                 apkg.addCard(keys, sides[1], {tags: [cat, 'binding to def']})
-                apkg.addCard(sides[1], keys, {tags: [cat, 'def to binding']})
-                // maybe: option single sided
+                // apkg.addCard(sides[1], keys, {tags: [cat, 'def to binding']})
+                // maybe: option two sided -> would need to shuffle the cards
+
+                // §idea: extra args to add tags --
             }
         })
     apkg

@@ -1,0 +1,13 @@
+SPC g > -- Show submodule prompt
+SPC g b -- Open a magit blame
+SPC g f h -- Show file commits history
+SPC g H c -- Clear highlights
+SPC g H h -- Highlight regions by age of commits
+SPC g H t -- Highlight regions by last updated time
+SPC g I -- Open helm-gitignore
+SPC g s -- Open a magit status window
+SPC g S -- Stage current file
+SPC g m -- Magit dispatch popup
+SPC g M -- Display the last commit message of the current line
+SPC g t -- Launch the git time machine
+SPC g U -- Unstage current file

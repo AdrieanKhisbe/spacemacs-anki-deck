@@ -1,3 +1,24 @@
-SPC s b -- Search buffer
-SPC s f -- Search files in a given directory
-SPC s p -- Search in current project
+SPC s b/B -- Search buffer (with default input)
+SPC s f/F -- Search files in a given directory (with default input)
+SPC s p/P -- Search in current project (with default input)
+SPC s s -- Search with the first found tool
+SPC s S -- Search with the first found tool with default input
+SPC s a a -- Ag
+SPC s a A -- Ag with default input
+SPC s g g -- Grep
+SPC s g G -- Grep with default input
+F3 -- In a helm or ivy buffer, save results to a regular buffer
+SPC r l -- Resume the last completion buffer
+SPC r s/s l -- Resume search buffer (completion or converted search buffer)
+SPC s ` -- Go back to the previous place reached with helm-ag
+# more: (in stack)
+* -- Initiate navigation transient state on current symbol and jump forwards
+# -- Initiate navigation transient state on current symbol and jump backwards
+SPC s e -- Edit all occurrences of the current symbol(/)
+SPC s h -- Highlight the current symbol and all its occurrence within the current range
+SPC s H -- Go to the last searched occurrence of the last highlighted symbol
+SPC t h a -- Toggle automatic highlight of symbol under point after ahs-idle-interval seconds
+
+SPC s s -- Execute helm-swoop
+SPC s S -- Execute helm-multi-swoop
+SPC s C-s -- Execute helm-multi-swoop-all

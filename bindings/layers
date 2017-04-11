@@ -1,0 +1,36 @@
+SPC l [1..9, 0] -	Switch to nth layout
+SPC l [C-1..C-9, C-0]	-- Switch to nth layout and keep the transient state active
+SPC l <tab>	-- Switch to the latest layout
+SPC l a	-- Add a buffer to the current layout
+SPC l A	-- Add all the buffers from another layout in the current one
+SPC l b	-- Select a buffer in the current layout
+SPC l d	-- Delete the current layout and keep its buffers
+SPC l D	-- Delete the other layouts and keep their buffers
+SPC l h	-- Go to default layout
+SPC l C-h	-- Previous layout in list
+SPC l l	-- Select/create a layout with helm
+SPC l L	-- Load layouts from file
+SPC l C-l/n	-- Next layout in list
+SPC l N	-- Previous layout in list
+SPC l o	-- Open a custom layout
+SPC l p	-- Previous layout in list
+SPC l r	-- Remove current buffer from layout
+SPC l R	-- Rename current layout
+SPC l s	-- Save layouts
+SPC l t	-- Display a buffer without adding it to the current layout
+SPC l w	-- Workspaces transient state (needs eyebrowse layer enabled)
+SPC l x	-- Kill current layout with its buffers
+SPC l X	-- Kill other layouts with their buffers
+
+SPC w [1..9,0]	-- Switch to nth workspace
+SPC w [C-1..C-9,C-0]	-- Switch to nth workspace and keep the transient state active
+SPC w TAB	-- Switch to last active workspace
+SPC w d	-- Close current workspace
+SPC w n/l	-- Switch to next workspace
+SPC w N/p/h	-- Switch to previous workspace
+SPC w R	-- Set a tag to the current workspace
+SPC w w	-- Switched to tagged workspace
+
+gt -- Go to next workspace
+gT -- Got to previous workspace
+SPC b W	-- Go to workspace and window by buffer

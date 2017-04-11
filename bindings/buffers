@@ -1,0 +1,19 @@
+SPC b . -- Buffer transient state
+SPC b a -- Add buffer to perspective
+SPC b B -- ibuffer
+SPC b b -- Helm mini
+SPC b d -- Kill this buffer
+SPC b e -- Erase this buffer
+SPC b f -- Reveal in Finder
+SPC b h -- Buffer Hime
+SPC b m -- Kill other buffer
+SPC b N -- new empty buffer
+SPC b P -- Copy clipboard to whole buffer
+SPC b p -- Previous buffer
+SPC b R -- Save revert buffer
+SPC b r -- Remove buffer from perspective
+SPC b s -- switch to scratch buffer
+SPC b W -- Goto Buffer Workshpace
+SPC b w -- Read only mode
+SPC b Y -- Copy whole buffer to clipboard
+SPC b C-d -- Kill matching buffers rudely

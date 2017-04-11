@@ -5,7 +5,7 @@ const apkg = new AnkiExport('spacemacs-bindings');
 
 //apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
 
-let categories = ['search', 'layers'];
+let categories = ['search', 'layers', 'buffers'];
 
 categories.forEach((cat) => {
     const catContent = fs.readFileSync(`./bindings/${cat}`)

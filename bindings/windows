@@ -1,0 +1,35 @@
+SPC w TAB	switch to alternate window in the current frame (switch back and forth)
+SPC w =	balance split windows
+SPC w b	force the focus back to the minibuffer (useful with helm popups)
+SPC w c	maximize/minimize a window and center it
+SPC w C	maximize/minimize a window and center it using ace-window
+SPC w d	delete a window
+SPC u SPC w d	delete a window and its current buffer (does not delete the file)
+SPC w D	delete another window using ace-window
+SPC u SPC w D	delete another window and its current buffer using ace-window
+SPC w t -- Toggle window dedication (dedicated window cannot be reused by a mode)
+SPC w f -- Toggle follow mode
+SPC w F -- Create new frame
+SPC w h -- Move to window on the left
+SPC w H -- Move window to the left
+SPC w j -- Move to window below
+SPC w J -- Move window to the bottom
+SPC w k -- Move to window above
+SPC w K -- Move window to the top
+SPC w l -- Move to window on the right
+SPC w L -- Move window to the right
+SPC w m -- Maximize/minimize a window (maximize is equivalent to delete other windows)
+SPC w M -- Swap windows using ace-window
+SPC w o -- Cycle and focus between frames
+SPC w p m -- Open messages buffer in a popup window
+SPC w p p -- Close the current sticky popup window
+SPC w r -- Rotate windows forward
+SPC w R -- Rotate windows backward
+SPC w s/- -- Horizontal split
+SPC w S -- Horizontal split and focus new window
+SPC w u -- Undo window layout (used to effectively undo a closed window)
+SPC w U -- Redo window layout
+SPC w v// -- Vertical split
+SPC w V -- Vertical split and focus new window
+SPC w w -- Cycle and focus between windows
+SPC w W -- Select window using ace-window

@@ -1,0 +1,20 @@
+SPC j $ -- Push mark and go to end of line
+SPC j 0 -- Push mark and go to beginning of line
+SPC j = -- Indent region or buffer
+SPC j b -- Avy Pop Mark
+SPC j D -- Dired jump other window
+SPC j d -- Dired-jump
+SPC j f -- Find function
+SPC j i -- Helm jump in buffer
+SPC j I -- Helm imenu in all buffers
+SPC j j -- Avy goto Char
+SPC j J -- Avy Goto Char 2
+SPC j k -- Goto next line and indent
+SPC j l -- Avy Goto Line
+SPC j n -- Sp newline
+SPC j o -- Open line
+SPC j q -- Dumb Jump Quick Look
+SPC j s -- split sexp
+SPC j S -- Split and new line
+SPC j u -- Avy Goto Url
+SPC j v -- Find Variable

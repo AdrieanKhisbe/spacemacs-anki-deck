@@ -7,13 +7,11 @@ SPC l b	-- Select a buffer in the current layout
 SPC l d	-- Delete the current layout and keep its buffers
 SPC l D	-- Delete the other layouts and keep their buffers
 SPC l h	-- Go to default layout
-SPC l C-h	-- Previous layout in list
 SPC l l	-- Select/create a layout with helm
 SPC l L	-- Load layouts from file
 SPC l C-l/n	-- Next layout in list
-SPC l N	-- Previous layout in list
+SPC l C-h/p/N	-- Previous layout in list
 SPC l o	-- Open a custom layout
-SPC l p	-- Previous layout in list
 SPC l r	-- Remove current buffer from layout
 SPC l R	-- Rename current layout
 SPC l s	-- Save layouts

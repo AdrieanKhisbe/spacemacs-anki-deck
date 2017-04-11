@@ -3,9 +3,11 @@ SPC b a -- Add buffer to perspective
 SPC b B -- ibuffer
 SPC b b -- Helm mini
 SPC b d -- Kill this buffer
+SPC b D -- Kill buffer using ace-window
 SPC b e -- Erase this buffer
 SPC b f -- Reveal in Finder
-SPC b h -- Buffer Hime
+SPC b h -- Buffer Home
+SPC b m -- Kill other buffer
 SPC b m -- Kill other buffer
 SPC b N -- new empty buffer
 SPC b P -- Copy clipboard to whole buffer

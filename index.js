@@ -1,7 +1,7 @@
 const fs = require('fs');
 const AnkiExport = require('anki-apkg-export').default;
 
-let categories = ['search', 'layers', 'buffers', 'files', 'jump', 'git', 'global',
+let categories = ['search', 'layouts', 'buffers', 'files', 'jump', 'git', 'global',
                   'projects', 'lisp', 'toggle'];
 
 if (!fs.existsSync('output')) fs.mkdirSync('output');

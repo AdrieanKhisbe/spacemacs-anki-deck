@@ -1,10 +1,10 @@
 const fs = require('fs');
 const AnkiExport = require('anki-apkg-export').default;
 
-//apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
-
 let categories = ['search', 'layers', 'buffers', 'files', 'jump', 'git', 'global',
-                  'project', 'lisp', 'toggle'];
+                  'projects', 'lisp', 'toggle'];
+
+if (!fs.existsSync('output')) fs.mkdirSync('output');
 
 categories.forEach((cat) => {
     const apkg = new AnkiExport('spacemacs-bindings::' + cat);
@@ -25,7 +25,7 @@ categories.forEach((cat) => {
     apkg
         .save()
         .then(zip => {
-            fs.writeFileSync(`./spacemacs-${cat}.apkg`, zip, 'binary');
+            fs.writeFileSync(`./output/spacemacs-${cat}.apkg`, zip, 'binary');
             console.log(`Package has been generated: spacemacs-${cat}.apkg`);
         })
         .catch(err => console.log(err.stack || err));

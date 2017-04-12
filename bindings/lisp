@@ -1,0 +1,61 @@
+## Lisp Keybindings
+# Key Binding	Function
+SPC k % -- Evil jump item
+SPC k : -- Ex command
+SPC k ( -- Insert expression before (same level as current one)
+SPC k ) -- Insert expression after (same level as current one)
+SPC k $ -- Go to the end of current sexp
+SPC k ` k -- Hybrid version of push sexp (can be used in non lisp dialects)
+SPC k ` p -- Hybrid version of push sexp (can be used in non lisp dialects)
+SPC k ` s -- Hybrid version of slurp sexp (can be used in non lisp dialects)
+SPC k ` t -- Hybrid version of transpose sexp (can be used in non lisp dialects)
+SPC k 0 -- Go to the beginning of current sexp
+SPC k a -- Absorb expression
+SPC k b -- Forward barf expression
+SPC k B -- Backward barf expression
+SPC k c -- Convolute expression
+SPC k ds -- Delete symbol
+SPC k Ds -- Backward delete symbol
+SPC k dw -- Delete word
+SPC k Dw -- Backward delete word
+SPC k dx -- Delete expression
+SPC k Dx -- Backward delete expression
+SPC k e -- Unwrap current expression and kill all symbols after point
+SPC k E -- Unwrap current expression and kill all symbols before point
+SPC k h -- Previous symbol
+SPC k H -- Go to previous sexp
+SPC k i -- Switch to insert state
+SPC k I -- Go to beginning of current expression and switch to insert state
+SPC k j -- Next closing parenthesis
+SPC k J -- Join expression
+SPC k k -- Previous opening parenthesis
+SPC k l -- Next symbol
+SPC k L -- Go to next sexp
+SPC k p -- Paste after
+SPC k P -- Paste before
+SPC k r -- Raise expression (replace parent expression by current one)
+SPC k s -- Forward slurp expression
+SPC k S -- Backward slurp expression
+SPC k t -- Transpose expression
+SPC k u -- Undo
+SPC k U -- Got to parent sexp backward
+SPC k C-r -- Redo
+SPC k v -- Switch to visual state
+SPC k V -- Switch to visual line state
+SPC k C-v -- Switch to visual block state
+SPC k w -- Wrap expression with parenthesis
+SPC k W -- Unwrap expression
+SPC k y -- Copy expression
+# Emacs lisp specific key bindings
+SPC m e $ -- Go to end of line and evaluate last sexp
+SPC m e b -- Evaluate buffer
+SPC m e c -- Evaluate current form (a def or a set)
+SPC m e e -- Evaluate last sexp
+SPC m e f -- Evaluate current defun
+SPC m e l -- Go to end of line and evaluate last sexp
+SPC m e r -- Evaluate region
+SPC m g g -- Go to definition
+SPC m g G -- Go to definition in another window
+SPC m h h -- Describe elisp thing at point (show documentation)
+SPC m t b -- Execute buffer tests
+SPC m t q -- Ask for test function to execute

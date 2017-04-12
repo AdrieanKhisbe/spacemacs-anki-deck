@@ -1,0 +1,56 @@
+SPC t 8 -- Highlight any character past the 80th column
+SPC t f -- Display the fill column (by default the fill column is set to 80)
+SPC t h h -- Toggle highlight of the current line
+SPC t h i -- Toggle highlight indentation levels
+SPC t h c -- Toggle highlight indentation current column
+SPC t i -- Toggle indentation guide at point
+SPC t l -- Toggle truncate lines
+SPC t L -- Toggle visual lines
+SPC t n -- Toggle line numbers
+SPC t v -- Toggle smooth scrolling
+
+SPC T ~ -- Display ~ in the fringe on empty lines
+SPC T F -- Toggle frame fullscreen
+SPC T f -- Toggle display of the fringe
+SPC T m -- Toggle menu bar
+SPC T M -- Toggle frame maximize
+SPC T t -- Toggle tool bar
+SPC T T -- Toggle frame transparency and enter transparency transient state
+# Modeline
+SPC t m b -- Toggle the battery status
+SPC t m c -- Toggle the org task clock (available in org layer)
+SPC t m m -- Toggle the minor mode lighters
+SPC t m M -- Toggle the major mode
+SPC t m n -- Toggle the cat! (if colors layer is declared in your dotfile)
+SPC t m p -- Toggle the point character position
+SPC t m t -- Toggle the mode line itself
+SPC t m v -- Toggle the version control info
+SPC t m V -- Toggle the new version lighter
+
+# Minor Modes
+SPC t - -- Centered-cursor mode
+SPC t 8 -- Toggle highlight of characters for long lines
+SPC t C-8 -- Global toggle highlight of characters for long lines
+SPC t C-- -- Global centered cursor
+SPC t a -- Auto-completion
+SPC t c -- Camel case motion with subword mode
+SPC t E e -- Emacs editing style (holy mode)
+SPC t E h -- Hybrid editing style (hybrid mode)
+SPC t f -- Fill-column-indicator mode
+SPC t F -- Auto-fill mode
+SPC t g -- Golden-ratio mode
+SPC t h i -- Toggle highlight indentation levels
+SPC t h c -- Toggle highlight indentation current column
+SPC t i -- Indentation guide
+SPC t C-i -- Global indentation guide
+SPC t I -- Aggressive indent mode
+SPC t K -- Which-key mode
+SPC t p -- Smartparens mode
+SPC t C-p -- Global smartparens
+SPC t s -- Syntax checking (flycheck)
+SPC t S -- Enabled in spell checking layer (flyspell)
+SPC t w -- Whitespace mode
+SPC t C-w -- Global whitespace
+SPC t W -- Automatic whitespace cleanup (see dotspacemacs-whitespace-cleanup)
+SPC t C-W -- Automatic whitespace cleanup globally
+SPC t y -- Yasnippet mode

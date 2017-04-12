@@ -1,0 +1,25 @@
+SPC p '​ -- Open a shell in project's root (with the shell layer)
+SPC p ! -- Run shell command in project's root
+SPC p & -- Run async shell command in project's root
+SPC p % -- Replace a regexp
+SPC p a -- Toggle between implementation and test
+SPC p b -- Switch to project buffer
+SPC p c -- Compile project using projectile
+SPC p d -- Find directory
+SPC p D -- Open project root in dired
+SPC p f -- Find file
+SPC p F -- Find file based on path around point
+SPC p g -- Find tags
+SPC p C-g -- Regenerate the project's etags / gtags
+SPC p h -- Find file using helm
+SPC p I -- Invalidate the projectile cache
+SPC p k -- Kill all project buffers
+SPC p o -- Run multi-occur
+SPC p p -- Switch project
+SPC p r -- Open a recent file
+SPC p R -- Replace a string
+SPC p t -- Open NeoTree in projectile root
+SPC p T -- Test project
+SPC p v -- Open project root in vc-dir or magit
+SPC / -- Search in project with the best search tool available
+SPC s p -- See search in project

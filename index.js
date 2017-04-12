@@ -3,7 +3,7 @@ const AnkiExport = require('anki-apkg-export').default;
 
 //apkg.addMedia('anki.png', fs.readFileSync('anki.png'));
 
-let categories = ['search', 'layers', 'buffers', 'files', 'jump', 'git'];
+let categories = ['search', 'layers', 'buffers', 'files', 'jump', 'git', 'global'];
 
 categories.forEach((cat) => {
     const apkg = new AnkiExport('spacemacs-bindings::' + cat);

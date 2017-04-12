@@ -1,0 +1,39 @@
+SPC TAB -- Go to last Buffer
+SPC ! -- Shell Command
+SPC ' -- Open Shell
+SPC * -- Smart search without input
+SPC / -- Smart Search
+SPC 0..9 -- Got to num window
+SPC : -- M-x
+SPC ; -- Nerd commenter comment operator
+SPC ? -- Show Keybindings
+SPC `/ -- Winum select window by number
+SPC u -- Universal Arg
+SPC v -- Expand Region
+SPC <f1> -- Apropos
+
+## Categories
+SPC a -- Applicatoins
+SPC B -- Global buffers
+SPC b -- Buffers
+SPC C -- Capture/Colors
+SPC c -- Compile/Comments
+SPC d -- Prefix
+SPC e -- Errors
+SPC f -- Files
+SPC g -- Git/Control-Version
+SPC h -- Help
+SPC i -- Insertion
+SPC j -- jump/join/split
+SPC k -- Lisp
+SPC l -- Layout
+SPC n -- Narrow/Number
+SPC p -- Projects
+SPC q -- Quit
+SPC S -- Spelling
+SPC s -- search/symbol
+SPC T -- UI toggles/Themes
+SPC t -- Toggles
+SPC w -- Windows
+SPC x -- Text
+SPC z -- Zoom

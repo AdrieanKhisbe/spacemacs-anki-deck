@@ -60,3 +60,68 @@ SPC s k p	ack
 SPC s k P	ack with default text
 SPC s t p	pt
 SPC s t P	pt with default text
+
+## Lisp Keybindings
+
+Key Binding	Function
+SPC k %	evil jump item
+SPC k :	ex command
+SPC k (	insert expression before (same level as current one)
+SPC k )	insert expression after (same level as current one)
+SPC k $	go to the end of current sexp
+SPC k ` k	hybrid version of push sexp (can be used in non lisp dialects)
+SPC k ` p	hybrid version of push sexp (can be used in non lisp dialects)
+SPC k ` s	hybrid version of slurp sexp (can be used in non lisp dialects)
+SPC k ` t	hybrid version of transpose sexp (can be used in non lisp dialects)
+SPC k 0	go to the beginning of current sexp
+SPC k a	absorb expression
+SPC k b	forward barf expression
+SPC k B	backward barf expression
+SPC k c	convolute expression
+SPC k ds	delete symbol
+SPC k Ds	backward delete symbol
+SPC k dw	delete word
+SPC k Dw	backward delete word
+SPC k dx	delete expression
+SPC k Dx	backward delete expression
+SPC k e	unwrap current expression and kill all symbols after point
+SPC k E	unwrap current expression and kill all symbols before point
+SPC k h	previous symbol
+SPC k H	go to previous sexp
+SPC k i	switch to insert state
+SPC k I	go to beginning of current expression and switch to insert state
+SPC k j	next closing parenthesis
+SPC k J	join expression
+SPC k k	previous opening parenthesis
+SPC k l	next symbol
+SPC k L	go to next sexp
+SPC k p	paste after
+SPC k P	paste before
+SPC k r	raise expression (replace parent expression by current one)
+SPC k s	forward slurp expression
+SPC k S	backward slurp expression
+SPC k t	transpose expression
+SPC k u	undo
+SPC k U	got to parent sexp backward
+SPC k C-r	redo
+SPC k v	switch to visual state
+SPC k V	switch to visual line state
+SPC k C-v	switch to visual block state
+SPC k w	wrap expression with parenthesis
+SPC k W	unwrap expression
+SPC k y	copy expression
+Emacs lisp specific key bindings
+Key Binding	Function
+SPC m e $	go to end of line and evaluate last sexp
+SPC m e b	evaluate buffer
+SPC m e c	evaluate current form (a def or a set)
+SPC m e e	evaluate last sexp
+SPC m e f	evaluate current defun
+SPC m e l	go to end of line and evaluate last sexp
+SPC m e r	evaluate region
+Key Binding	Function
+SPC m g g	go to definition
+SPC m g G	go to definition in another window
+SPC m h h	describe elisp thing at point (show documentation)
+SPC m t b	execute buffer tests
+SPC m t q	ask for test function to execute

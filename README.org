@@ -1,9 +1,11 @@
 #+TITLE: Spacemacs Anki Deck
 
-Basic [[https://spacemacs.org][spacemacs]] anki deck generator
+Basic [[https://spacemacs.org][spacemacs]] Anki deck generator.
 
 #+BEGIN_SRC sh
   node index.js
 #+END_SRC
 
 Board progress on [[https://waffle.io/AdrieanKhisbe/spacemacs-anki-deck][waffle]].
+
+A first deck is available in the release.

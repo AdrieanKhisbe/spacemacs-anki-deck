@@ -13,7 +13,7 @@ SPC v -- Expand Region
 SPC <f1> -- Apropos
 
 ## Categories
-SPC a -- Applicatoins
+SPC a -- Applications
 SPC B -- Global buffers
 SPC b -- Buffers
 SPC C -- Capture/Colors

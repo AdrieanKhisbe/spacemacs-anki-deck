@@ -1,10 +1,14 @@
 #+TITLE: Spacemacs Anki Deck
 
-Basic [[https://spacemacs.org][spacemacs]] Anki deck generator.
+Basic [[http://spacemacs.org][spacemacs]] [[https://apps.ankiweb.net/][Anki]] deck generator.
 
+
+Generate the `apkg` deck with the following commands:
 #+BEGIN_SRC sh
   node index.js
 #+END_SRC
+
+Cards definitions are in the [[./bindings][bindings folder]].
 
 Board progress on [[https://waffle.io/AdrieanKhisbe/spacemacs-anki-deck][waffle]].
 

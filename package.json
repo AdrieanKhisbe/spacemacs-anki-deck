@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adriean Khisbe <adriean.khisbe@live.fr> (https://github.com/AdrieanKhisbe/)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@-k/eslint-plugin": "^0.3.1",
     "anki-apkg-export-cli": "^2.0.1",

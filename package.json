@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "description": "Generator for an anki deck for spacemacs",
   "main": "index.js",
+  "bin": {
+    "spacemacs-anki-deck": "index.js"
+  },
   "scripts": {
     "lint": "eslint index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "mappings"
+  ],
   "author": "Adriean Khisbe <adriean.khisbe@live.fr> (https://github.com/AdrieanKhisbe/)",
   "license": "MIT",
+  "homepage": "https://github.com/AdrieanKhisbe/spacemacs-anki-deck#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdrieanKhisbe/spacemacs-anki-deck.git"
+  },
   "devDependencies": {
     "@-k/eslint-plugin": "^0.3.1",
     "anki-apkg-export-cli": "^2.0.1",

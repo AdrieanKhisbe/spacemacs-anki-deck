@@ -8,7 +8,7 @@ Generate the `apkg` deck with the following commands:
   node index.js
 ```
 
-Cards definitions are in the [bindings folder](./bindings)
+Cards definitions are in the [mappings folder](./mappings)
 
 A first deck is available in the [release section](https://github.com/AdrieanKhisbe/spacemacs-anki-deck/releases/tag/v0.1.0).
 

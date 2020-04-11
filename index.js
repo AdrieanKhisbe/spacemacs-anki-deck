@@ -18,21 +18,20 @@ if (!fs.existsSync('output')) fs.mkdirSync('output');
 
 categories.forEach(cat => {
   const apkg = new AnkiExport(`spacemacs-bindings::${cat}`);
-  const catContent = fs.readFileSync(`./bindings/${cat}`);
-  catContent
-    .toString()
-    .split('\n')
-    .map(line => {
-      const sides = line.split(' -- ');
-      if (sides.length === 2) {
-        const keys = `<kbd>${sides[0]}</kbd>`.replace('SPC', '<i>SPC</i>');
-        apkg.addCard(keys, sides[1], {tags: [cat, 'binding to def']});
-        // apkg.addCard(sides[1], keys, {tags: [cat, 'def to binding']})
-        // maybe: option two sided -> would need to shuffle the cards
+  const catContent = fs.readFileSync(`./mappings/${cat}`, 'utf-8');
+  catContent.split('\n').map(line => {
+    const sides = line.split(' -- ');
+    if (sides.length === 2) {
+      const keys = `<kbd>${sides[0]}</kbd>`.replace('SPC', '<i>SPC</i>');
 
-        // §idea: extra args to add tags --
-      }
-    });
+      apkg.addCard(keys, sides[1], {tags: [cat, 'binding to def']});
+      // apkg.addCard(sides[1], keys, {tags: [cat, 'def to binding']})
+      // maybe: option two sided -> would need to shuffle the cards
+
+      // §idea: extra args to add tags --
+    }
+  });
+
   apkg
     .save()
     .then(zip => {

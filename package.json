@@ -16,6 +16,12 @@
   ],
   "author": "Adriean Khisbe <adriean.khisbe@live.fr> (https://github.com/AdrieanKhisbe/)",
   "license": "MIT",
+  "tags": [
+    "anki",
+    "flash",
+    "cards",
+    "spacemacs"
+  ],
   "homepage": "https://github.com/AdrieanKhisbe/spacemacs-anki-deck#readme",
   "repository": {
     "type": "git",

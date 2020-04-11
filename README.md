@@ -2,7 +2,7 @@
 
 > Basic [spacemacs](http://spacemacs.org) [Anki](https://apps.ankiweb.net/) deck generator
 
-[![Npm](https://img.shields.io/node/v/spacemacs-anki-deck.svg?logo=node.js)](https://www.npmjs.com/package/spacemacs-anki-deck)
+[![Npm](https://img.shields.io/npm/v/spacemacs-anki-deck.svg?logo=node.js)](https://www.npmjs.com/package/spacemacs-anki-deck)
 
 To Generate the `apkg` deck you can either:
 - install `spacemacs-anki-deck` globally and run `spacemacs-anki-deck some-folder`

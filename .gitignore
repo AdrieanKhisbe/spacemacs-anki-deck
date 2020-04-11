@@ -2,3 +2,5 @@ node_modules
 *~
 *.apkg
 output
+private
+tmp

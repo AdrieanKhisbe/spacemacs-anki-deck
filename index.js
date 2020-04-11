@@ -16,10 +16,10 @@ const categories = [
   'toggle'
 ];
 
-const generate = folder => {
+const generate = async folder => {
   if (!fs.existsSync(folder)) fs.mkdirSync(folder);
 
-  categories.forEach(cat => {
+  const promises = categories.map(cat => {
     const apkg = new AnkiExport(`spacemacs-bindings::${cat}`);
     const catContent = fs.readFileSync(path.join(__dirname, `mappings/${cat}`), 'utf-8');
     catContent.split('\n').map(line => {
@@ -35,14 +35,19 @@ const generate = folder => {
       }
     });
 
-    apkg
+    return apkg
       .save()
       .then(zip => {
-        fs.writeFileSync(path.join(folder, `spacemacs-${cat}.apkg`), zip, 'binary');
-        console.log(`Package has been generated: spacemacs-${cat}.apkg`);
+        const deckPath = path.join(folder, `spacemacs-${cat}.apkg`);
+        fs.writeFileSync(deckPath, zip, 'binary');
+        console.log(`🗂  spacemacs-${cat}.apkg generated`);
+        return deckPath;
       })
-      .catch(err => console.log(err.stack || err));
+      .catch(err => console.error(err.stack || err));
   });
+
+  await Promise.all(promises);
+  console.log(`All ${categories.length} decks have been generated in '${folder}' 🗃`);
 };
 module.exports = {generate};
 if (!module.parent) {
@@ -51,5 +56,6 @@ if (!module.parent) {
     console.error('Provide a folder to generate deck in');
     process.exit(1);
   }
+  console.log(`About to generate spacemacs anki decks in provided folder '${folder}' 🚀`);
   generate(folder);
 }

@@ -12,6 +12,6 @@
     "anki-apkg-export-cli": "^2.0.1"
   },
   "dependencies": {
-    "anki-apkg-export": "^3.0.1"
+    "anki-apkg-export": "^4.0.3"
   }
 }

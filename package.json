@@ -28,9 +28,9 @@
     "url": "https://github.com/AdrieanKhisbe/spacemacs-anki-deck.git"
   },
   "devDependencies": {
-    "@-k/eslint-plugin": "^0.3.1",
+    "@-k/eslint-plugin": "^0.4.0",
     "anki-apkg-export-cli": "^2.0.1",
-    "eslint": "^6.8.0"
+    "eslint": "^7.5.0"
   },
   "dependencies": {
     "anki-apkg-export": "^3.2.0"

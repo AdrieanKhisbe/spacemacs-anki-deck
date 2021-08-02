@@ -1,6 +1,6 @@
 {
   "name": "spacemacs-anki-deck",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Generator for an anki deck for spacemacs",
   "main": "index.js",
   "bin": {
